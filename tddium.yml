@@ -13,7 +13,7 @@ profiles:
        invocation: single
        output: exit-status
     test_pattern:
-     - spec/default/**
+     - spec/default/**_spec.rb
   integration:
     tests:
      - type: custom
@@ -25,6 +25,6 @@ profiles:
        invocation: single
        output: exit-status
     test_pattern:
-     - spec/integration/**
+     - spec/integration/**_spec.rb
 rerun_list:
-  - integration/**
+  - integration/**_spec.rb
