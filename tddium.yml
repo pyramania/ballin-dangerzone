@@ -1,6 +1,6 @@
 plan:
-  - default
   - integration
+  - default
 profiles:
   default:
     tests:
