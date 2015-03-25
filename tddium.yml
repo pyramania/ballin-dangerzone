@@ -12,6 +12,8 @@ profiles:
        command: sleep 15
        invocation: single
        output: exit-status
+     test_pattern:
+       - default/**.sh
   integration:
     tests:
      - type: custom
@@ -22,7 +24,7 @@ profiles:
        command: sleep 14
        invocation: single
        output: exit-status
+     test_pattern:
+       - integration/**.sh
 rerun_list:
-  - features/user_dashboard.feature
-  - features/admin/admin_instances.feature
-  - features/report/html_report_actions.feature
+  - integration/one.sh
