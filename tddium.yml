@@ -1,7 +1,8 @@
 plan:
+  - defaultt
   - integration
 profiles:
-  default:
+  defaultt:
     tests:
      - type: custom
        command: sleep 10
