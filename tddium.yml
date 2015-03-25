@@ -4,27 +4,27 @@ plan:
 profiles:
   default:
     tests:
-      - type: custom
-        command: sleep 10
-        invocation: single
-        output: exit-status
-      - type: custom
-        command: sleep 15
-        invocation: single
-        output: exit-status
+     - type: custom
+       command: sleep 10
+       invocation: single
+       output: exit-status
+     - type: custom
+       command: sleep 15
+       invocation: single
+       output: exit-status
      test_pattern:
-       - default/**.sh
+      - default/**.sh
   integration:
     tests:
-      - type: custom
-        command: sleep 11
-        invocation: single
-        output: exit-status
-      - type: custom
-        command: sleep 14
-        invocation: single
-        output: exit-status
+     - type: custom
+       command: sleep 11
+       invocation: single
+       output: exit-status
+     - type: custom
+       command: sleep 14
+       invocation: single
+       output: exit-status
      test_pattern:
-       - integration/**.sh
+      - integration/**.sh
 rerun_list:
   - integration/one.sh
