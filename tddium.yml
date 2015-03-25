@@ -1,5 +1,5 @@
 plan:
-  - defaultt
+  - default
   - integration
 profiles:
   default:
