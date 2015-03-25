@@ -1,5 +1,28 @@
-a:
-  -: a
-  : b
-
-
+plan:
+  - default
+  - integration
+profiles:
+  default:
+    tests:
+     - type: custom
+       command: sleep 10
+       invocation: single
+       output: exit-status
+     - type: custom
+       command: sleep 15
+       invocation: single
+       output: exit-status
+  integration:
+    tests:
+     - type: custom
+       command: sleep 11
+       invocation: single
+       output: exit-status
+     - type: custom
+       command: sleep 14
+       invocation: single
+       output: exit-status
+rerun_list:
+  - features/user_dashboard.feature
+  - features/admin/admin_instances.feature
+  - features/report/html_report_actions.feature
