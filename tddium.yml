@@ -4,7 +4,7 @@ plan:
 profiles:
   default:
     tests:
-     -type: custom
+     - type: custom
        command: sleep 10
        invocation: single
        output: exit-status
