@@ -1,19 +1,19 @@
 plan:
-  -default
-  -integration
+  - default
+  - integration
 profiles:
   default:
     tests:
-     -type: custom
+     - type: custom
        command: sleep 10
        invocation: single
        output: exit-status
-     -type: custom
+     - type: custom
        command: sleep 15
        invocation: single
        output: exit-status
     test_pattern:
-     - spec/default/**_spec.rb
+     - default/**.sh
   integration:
     tests:
      - type: custom
@@ -25,6 +25,6 @@ profiles:
        invocation: single
        output: exit-status
     test_pattern:
-     - spec/integration/**_spec.rb
+     - integration/**.sh
 rerun_list:
-  - integration/**_spec.rb
+  - integration/one.sh
