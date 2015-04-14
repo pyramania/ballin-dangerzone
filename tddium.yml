@@ -14,7 +14,7 @@ tddium:
   php:
      version: 5.3.29
   python:
-     python_version: 2.4.6
+     python_version: 3.3.3
   java:
     java_version: noversion
   leiningen:
