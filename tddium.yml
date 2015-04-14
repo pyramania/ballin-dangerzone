@@ -12,8 +12,6 @@ tddium:
     ruby_version: ruby-2.1.5
     bundler_version: 1.6.2
     rubygems_version: 2.2.2
-  golang:
-     golang_version: 1.0.3
   php:
      version: 5.3.29
   python:
