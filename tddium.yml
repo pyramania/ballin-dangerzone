@@ -16,7 +16,7 @@ tddium:
   python:
      python_version: 2.4.6
   java:
-    java_version: java-8-oracle
+    java_version: noversion
   leiningen:
     leiningen_version: 2.4.2
   nodejs:
