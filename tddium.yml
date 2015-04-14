@@ -18,7 +18,7 @@ tddium:
   java:
     java_version: java-8-oracle
   leiningen:
-    leiningen_version: 2.6.2
+    leiningen_version: 2.4.2
   nodejs:
     version: 0.6.18
   scala:
