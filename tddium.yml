@@ -8,18 +8,18 @@ tddium:
   - "python -V"
   - "scala -version"
   - "lein version"
-  ruby_version: ruby-2.1.1
+  ruby_version: ruby-2.1.5
   golang:
-     golang_version: 1.1.2
+     golang_version: 1.0.3
   php:
-     version: 5.4.29
+     version: 5.3.29
   python:
-     python_version: 3.4.0
+     python_version: 2.4.6
   java:
-    java_version: java-7-openjdk
+    java_version: java-8-oracle
   leiningen:
-    leiningen_version: 1.6
+    leiningen_version: 2.6.2
   nodejs:
-    version: 0.8.19
+    version: 0.6.18
   scala:
-    scala_version: 2.10.4
+    scala_version: 2.11.0
