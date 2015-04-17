@@ -1,7 +1,7 @@
 tddium:
   tests:
   - "ruby -v"
-  - "bundler version"
+  - "bundle version"
   - "gem -v"
   - "go version"
   - "java -version"
