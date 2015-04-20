@@ -1,8 +1,8 @@
 tddium:
   tests:
-  - "ruby -v"
-  - "bundle version"
-  - "gem -v"
+  -"ruby -v"
+  -"bundle version"
+  -"gem -v"
   - "go version"
   - "java -version"
   - "node -v"
@@ -11,7 +11,7 @@ tddium:
   - "scala -version"
   - "lein version"
   ruby:
-    ruby_version: ruby-1.9.3-p545
+  ruby_version: ruby-1.9.3-p545
     bundler_version: 1.6.2
     rubygems_version: 2.2.2
   php:
