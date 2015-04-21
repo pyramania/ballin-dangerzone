@@ -10,10 +10,9 @@ tddium:
   - "python -V"
   - "scala -version"
   - "lein version"
-  ruby:
   ruby_version: ruby-1.9.3-p545
-    bundler_version: 1.6.2
-    rubygems_version: 2.2.2
+  bundler_version: 1.6.2
+  rubygems_version: 2.2.2
   php:
      version: 5.3.29
   python:
