@@ -1,26 +1,27 @@
-:tddium:
-  :timeout: 600
-  :timeout_hook: 900
-  :bundler_version: '1.8.2'
-  :ruby_version: ruby-2.1.5
-  :environment:
-    'RAILS_LOG_LEVEL': '0'
-  :skip_package:
-  - ruby
-  :hooks:
-    :pre: bundle install --deployment --path $HOME/bundle
-    :worker: bundle exec rake db:setup
-    :post: bundle exec rails runner -e test "require Rails.root.join('spec', 'fixtures.rb')" && bundle exec rake assets:precompile && bundle exec ruby -e 'require "phantomjs"; $stderr.puts Phantomjs.platf
-orm.inspect'
-  :test_pattern:
-    - spec/**_spec.rb
-  :tests:
-    - bundle exec rspec spec/features/jasmine_fixture_generator.rb && bundle exec rake jasmine:ci
-  :postgresql:
-    :version: '9.3.5'
-  :redis:
-    :version: '2.8.12'
-  :java:
-    :java_version: java-7-openjdk
-  :elasticsearch:
-    :version: '1.4.2'
+tddium:
+  tests:
+  - "ruby -v"
+  - "bundle version"
+  - "gem -v"
+  - "go version"
+  - "java -version"
+  - "node -v"
+  - "php -v" 
+  - "python -V"
+  - "scala -version"
+  - "lein version"
+  ruby_version: ruby-1.9.3-p545
+  bundler_version: 1.6.2
+  rubygems_version: 2.2.2
+  php:
+     version: 5.3.29
+  python:
+     python_version: 3.3.3
+  java:
+    java_version: java-6-openjdk
+  leiningen:
+    leiningen_version: 2.4.2
+  nodejs:
+    version: 0.10.31
+  scala:
+    scala_version: 2.11.0
