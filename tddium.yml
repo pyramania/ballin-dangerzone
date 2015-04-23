@@ -13,10 +13,12 @@ tddium:
   ruby_version: ruby-1.9.3-p545
   bundler_version: 1.6.2
   rubygems_version: 2.2.2
+  golang:
+     golang_version: 5.3.29
   php:
      version: 5.3.29
   python:
-     python_version: 3.3.3
+     python_version: cpython-3.3.3
   java:
     java_version: java-6-openjdk
   leiningen:
