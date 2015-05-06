@@ -1,4 +1,4 @@
-ruby_version: ruby-2.1.5
+ruby_version: ruby_version: ruby-1.9.2-p320
 bundler_version: 1.7.6
 plan:
   - default
