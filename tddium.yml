@@ -1,3 +1,5 @@
+ruby_version: ruby-2.1.5
+bundler_version: 1.7.6
 plan:
   - default
   - integration
