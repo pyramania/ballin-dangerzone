@@ -1,6 +1,7 @@
 tddium:
   tests:
   - "ruby -v"
+  - "echo 'new'"
   - "go version"
   - "java -version"
   - "node -v"
