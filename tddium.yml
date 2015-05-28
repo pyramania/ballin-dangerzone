@@ -1,19 +1,27 @@
 tddium:
-  tests:
-  - "ruby -v"
-  - "go version"
-  - "java -version"
-  - "node -v"
-  - "php -v" 
-  - "python -V"
-  - "scala -version"
-  - "lein version"
-  java_version: java-7-openjdk
-  php_version: 5.4.32
-  golang_version: 1.1.2
-  python_version: 2.7
-  ruby_version: ruby-2.1.2
-  bundler_version: 1.7.3
-  leiningen_version: 1.6
-  nodejs_version: 0.8.19
-  scala_version: 2.10.4
+  plan:
+    - step1
+    - step2
+    - step3
+    - step4
+    - step5
+    - step6
+  profiles:
+    step1:
+      tests:
+        - "ruby -v"
+    step2:
+      tests:
+        - "go version"
+    step3:
+      tests:
+        - "java -version"
+    step4:
+      tests:
+        - "node -v"
+    step5:
+      tests:
+        - "php -v"
+    step6:
+      tests:
+        - "python -V"
