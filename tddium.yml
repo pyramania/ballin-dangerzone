@@ -1,0 +1,27 @@
+tddium:
+  plan:
+    - step1
+    - step2
+    - step3
+    - step4
+    - step5
+    - step6
+  profiles:
+    step1:
+      tests:
+        - "ruby -v"
+    step2:
+      tests:
+        - "go version"
+    step3:
+      tests:
+        - "java -version"
+    step4:
+      tests:
+        - "node -v"
+    step5:
+      tests:
+        - "php -v"
+    step6:
+      tests:
+        - "python -V"
