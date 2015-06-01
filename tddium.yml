@@ -1,11 +1,8 @@
 tddium:
+  ruby_version: 2.1.2
   plan:
     - step1
     - step2
-    - step3
-    - step4
-    - step5
-    - step6
   profiles:
     step1:
       ruby_version: 1.9.2
@@ -13,16 +10,4 @@ tddium:
         - "ruby -v"
     step2:
       tests:
-        - "go version"
-    step3:
-      tests:
-        - "java -version"
-    step4:
-      tests:
-        - "node -v"
-    step5:
-      tests:
-        - "php -v"
-    step6:
-      tests:
-        - "python -V"
+        - "ruby -v"
