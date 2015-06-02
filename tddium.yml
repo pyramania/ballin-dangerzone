@@ -18,7 +18,7 @@ tddium:
     - step8
   profiles:
     step1:
-      ruby_version: ruby-1.9.3
+      ruby_version: ruby-1.9.2
       tests:
         - "ruby -v"
     step2:
