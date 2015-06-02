@@ -14,8 +14,8 @@ tddium:
     - step4
     - step5
     - step6
-    - step7
     - step8
+    - step7
   profiles:
     step1:
       ruby_version: ruby-1.9.2
