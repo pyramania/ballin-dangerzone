@@ -44,7 +44,7 @@ tddium:
     step7:
       scala_version: 2.11.0
       tests:
-        - "scala -version"
+        - "scala -version | grep version"
     step8:
       leiningen_version: 2.4.2
       tests:
