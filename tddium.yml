@@ -1,6 +1,10 @@
 tddium:
   tests:
   - "ruby -v"
+  golang_version:
+    SPLIT:ruby_versions:
+    - "1.1.2"
+    - "1.2.1"
   ruby_version:
     SPLIT:ruby_versions:
     - "ruby-2.1.2"
