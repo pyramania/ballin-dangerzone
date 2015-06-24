@@ -9,7 +9,6 @@ tddium:
     SPLIT:ruby_versions:
     - "ruby-2.1.2"
     - "ruby-1.9.2"
-    - "ruby-1.9.3"
   plan:
     - default_0
     - default_1
