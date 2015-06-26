@@ -14,7 +14,7 @@ tddium:
     - default_1
     - default_2
     - default_3
-  profile:
+  profiles:
     start:
       tests:
       - "echo 'Hello World'"
