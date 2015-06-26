@@ -10,7 +10,7 @@ tddium:
     - "ruby-2.1.2"
     - "ruby-1.9.2"
   plan:
-    - default_0
-    - default_1
-    - default_2
-    - default_3
+    default_0:
+      default_1:
+        default_2:
+          default_3
