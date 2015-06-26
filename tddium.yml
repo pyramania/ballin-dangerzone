@@ -14,4 +14,11 @@ tddium:
     - default_1
     - default_2
     - default_3
+  profile:
+    start:
+      tests:
+      - "echo 'Hello World'"
+    end:
+      tests:
+      - "echo 'Goodbye World'"
 
