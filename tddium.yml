@@ -22,8 +22,7 @@ tddium:
             - "default_9"
             - "default_10"
             - "default_11"
-            -
-              default_12:
+            - default_12:
                 - "default_13"
                 - "default_14"
     default_15: default_16
