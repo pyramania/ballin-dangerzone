@@ -3,6 +3,58 @@ tddium:
   - "ruby -v"
   golang_version: "1.2.1"
   ruby_version: "ruby-1.9.2"
+  profiles:
+    default_0:
+      tests:
+        - "echo 'hi'"
+    default_1:
+      tests:
+        - "echo 'hi'"
+    default_2:
+      tests:
+        - "echo 'hi'"
+    default_3:
+      tests:
+        - "echo 'hi'"
+    default_4:
+      tests:
+        - "echo 'hi'"
+    default_5:
+      tests:
+        - "echo 'hi'"
+    default_6:
+      tests:
+        - "echo 'hi'"
+    default_7:
+      tests:
+        - "echo 'hi'"
+    default_8:
+      tests:
+        - "echo 'hi'"
+    default_9:
+      tests:
+        - "echo 'hi'"
+    default_10:
+      tests:
+        - "echo 'hi'"
+    default_11:
+      tests:
+        - "echo 'hi'"
+    default_12:
+      tests:
+        - "echo 'hi'"
+    default_13:
+      tests:
+        - "echo 'hi'"
+    default_14:
+      tests:
+        - "echo 'hi'"
+    default_15:
+      tests:
+        - "echo 'hi'"
+    default_16:
+      tests:
+        - "echo 'hi'"
   plan:
     default_0:
       default_1:
