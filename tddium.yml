@@ -6,55 +6,55 @@ tddium:
   profiles:
     default_0:
       tests:
-        - "echo 'hi'"
+        - "echo '0'"
     default_1:
       tests:
-        - "echo 'hi'"
+        - "echo '1'"
     default_2:
       tests:
-        - "echo 'hi'"
+        - "echo '2'"
     default_3:
       tests:
-        - "echo 'hi'"
+        - "echo '3'"
     default_4:
       tests:
-        - "echo 'hi'"
+        - "echo '4'"
     default_5:
       tests:
-        - "echo 'hi'"
+        - "echo '5'"
     default_6:
       tests:
-        - "echo 'hi'"
+        - "echo '6'"
     default_7:
       tests:
-        - "echo 'hi'"
+        - "echo '7'"
     default_8:
       tests:
-        - "echo 'hi'"
+        - "echo '8'"
     default_9:
       tests:
-        - "echo 'hi'"
+        - "echo '9'"
     default_10:
       tests:
-        - "echo 'hi'"
+        - "echo '10'"
     default_11:
       tests:
-        - "echo 'hi'"
+        - "echo '11'"
     default_12:
       tests:
-        - "echo 'hi'"
+        - "echo '12'"
     default_13:
       tests:
-        - "echo 'hi'"
+        - "echo '13'"
     default_14:
       tests:
-        - "echo 'hi'"
+        - "echo '14'"
     default_15:
       tests:
-        - "echo 'hi'"
+        - "echo '15'"
     default_16:
       tests:
-        - "echo 'hi'"
+        - "echo '16'"
   plan:
     default_0:
       default_1:
@@ -72,3 +72,6 @@ tddium:
                 - "default_13"
                 - "default_14"
     default_15: default_16
+  edges:
+    default_15: default_3
+    default_16: default_3
