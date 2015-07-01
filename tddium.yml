@@ -4,6 +4,8 @@ tddium:
   golang_version: "1.2.1"
   ruby_version: "ruby-1.9.2"
   profiles:
-    default: "hi"
+    default: 
+      tests:
+        - "echo 'hello'"
   plan:
     - default
