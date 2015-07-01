@@ -63,6 +63,7 @@ tddium:
           - "default_4"
           - "default_5"
           - "default_6"
+          - "default_16"
         default_7:
           default_8:
             - "default_9"
@@ -73,9 +74,4 @@ tddium:
                 - "default_14"
     default_15: default_16
   edges:
-    default_15: default_3
-    default_3: default_15
     default_16: default_3
-    default_19: default_3
-    default_1: default_30
-    default_30: default_1
