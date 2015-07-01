@@ -8,4 +8,4 @@ tddium:
       tests:
         - "echo 'hello'"
   plan:
-    - default
+    - "default"
