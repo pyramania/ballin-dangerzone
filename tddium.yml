@@ -1,11 +1,13 @@
 tddium:
   tests:
   - "ruby -v"
-  golang_version: "1.2.1"
   ruby_version: "ruby-1.9.2"
   profiles:
-    default: 
-      tests:
-        - "echo 'hello'"
+    one: 
+      ruby_version: "ruby-2.1.2"
+    two: 
+      ruby_version: "ruby-2.1.0"
   plan:
-    - "default"
+    - default
+    - one
+    - two
