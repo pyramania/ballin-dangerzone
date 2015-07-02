@@ -8,6 +8,5 @@ tddium:
     two: 
       ruby_version: "ruby-2.1.0"
   plan:
-    - default
     - one
     - two
