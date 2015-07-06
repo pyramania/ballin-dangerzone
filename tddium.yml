@@ -5,6 +5,9 @@ tddium:
   profiles:
     one: 
       ruby_version: "ruby-2.1.2"
+      profiles:
+        one:
+          ruby_version: "ruby-2.1.0"
     two: 
       ruby_version: "ruby-2.1.0"
   plan:
