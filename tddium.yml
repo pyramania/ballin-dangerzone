@@ -75,4 +75,3 @@ tddium:
     default_15: default_16
   edges:
     default_16: default_3
-    foo: bar
