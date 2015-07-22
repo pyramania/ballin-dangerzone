@@ -10,3 +10,10 @@ tddium:
     SPLIT:golang_versions:
     - "1.2.1"
     - "1.1.2"
+  plan:
+    - "default_0"
+    - "default_1"
+    - "default_2"
+    - "default_3"
+    - "default_4"
+    - "default_5"
