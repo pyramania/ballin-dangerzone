@@ -1,7 +1,12 @@
 tddium:
   tests:
   - "ruby -v"
-  golang_version: "1.2.1"
-  MATRIX:ruby_version:
-    ruby_version: "2.1.2"
-    ruby_version: "1.9.3
+  ruby_version:
+    SPLIT:ruby_versions:
+    - "ruby-2.1.2"
+    - "ruby-1.9.2"
+    - "ruby-1.9.3"
+  golang_version:
+    SPLIT:golang_versions:
+    - "1.2.1"
+    - "1.1.2"
