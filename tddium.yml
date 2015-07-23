@@ -1,19 +1,11 @@
 tddium:
   tests:
   - "ruby -v"
-  ruby_version:
-    SPLIT:ruby_versions:
-    - "ruby-2.1.2"
-    - "ruby-1.9.2"
-    - "ruby-1.9.3"
-  golang_version:
-    SPLIT:golang_versions:
-    - "1.2.1"
-    - "1.1.2"
+  profile:
+    test_profile:
+      SPLIT:golang_versions:
+        golang_version: "1.1.2"
+        ruby_version: "ruby-2.1.2"
   plan:
-    - "default_0"
-    - "default_1"
-    - "default_2"
-    - "default_3"
-    - "default_4"
-    - "default_5"
+    - "test_profile"
+    - "default"
