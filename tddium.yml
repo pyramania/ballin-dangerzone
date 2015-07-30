@@ -23,6 +23,4 @@ tddium:
     default_2:
       default_1:
       - "default_0"
-    default_0:
-      default_1:
-      - "default_2"
+    default_4:
