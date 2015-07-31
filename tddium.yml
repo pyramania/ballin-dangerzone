@@ -54,7 +54,8 @@ tddium:
         - "echo '15'"
     default_16:
       tests:
-        - "echo '16'"
+        - "exit 0"
+        - "exit 1"
   plan:
     default_0:
       default_1:
