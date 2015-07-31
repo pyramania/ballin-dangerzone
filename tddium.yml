@@ -8,7 +8,9 @@ tddium:
       tests:
         - "echo '0'"
       hooks:
-        post_build: "ruby compute_next_profile.rb"
+        post_build: 
+         - "ruby compute_next_profile.rb"
+         - "echo 'hooooo'"
     default_1:
       tests:
         - "echo '1'"
