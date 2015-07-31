@@ -3,6 +3,8 @@ tddium:
   - "ruby -v"
   golang_version: "1.2.1"
   ruby_version: "ruby-1.9.2"
+  hooks:
+    post_build: "echo 'hooo' && ruby compute_next_profile.rb"
   profiles:
     default_0:
       tests:
