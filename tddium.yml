@@ -57,16 +57,7 @@ tddium:
         - "exit 0"
         - "exit 1"
   plan:
-    default_0:
-      default_1:
-        default_2:
-          - "default_3"
-          - "default_16"
-        default_7:
-          default_8:
-            - "default_9"
-            - "default_12"
-    default_15: default_16
-  edges:
-    default_16: default_3
-    default_0: default_15
+    - "default_0"
+    - "default_1"
+    - "default_2"
+    - "default_15" 
