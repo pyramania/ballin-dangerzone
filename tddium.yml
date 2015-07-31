@@ -61,6 +61,7 @@ tddium:
   plan:
     - profile: default_0
       sets: next_profile
+      nest:
+      - profile: "{{next_profile}}"
     - profile: "default_3"
     - "default_2"
-    - profile: "{{next_profile}}"
