@@ -63,4 +63,4 @@ tddium:
       sets: next_profile
     - profile: "default_3"
     - "default_2"
-    - "default_15" 
+    - {{next_profile}}
