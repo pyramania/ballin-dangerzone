@@ -7,6 +7,8 @@ tddium:
     default_0:
       tests:
         - "echo '0'"
+      hooks:
+        post_build: "./compute_next_profile"
     default_1:
       tests:
         - "echo '1'"
@@ -57,7 +59,8 @@ tddium:
         - "exit 0"
         - "exit 1"
   plan:
-    - "default_0"
-    - "default_1"
+    - profile: default_0
+      sets: next_profile
+    - profile: "{{ next_profile }}"
     - "default_2"
     - "default_15" 
