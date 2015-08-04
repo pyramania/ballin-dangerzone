@@ -18,8 +18,13 @@ tddium:
       tests:
         - "echo '2'"
     default_3:
+     environment:
+        INTEGRATION:
+          SPLIT:int:
+            - true
+            - false
       tests:
-        - "echo '3'"
+        - "echo $INTEGRATION"
     default_4:
       tests:
         - "echo '4'"
