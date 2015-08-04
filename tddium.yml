@@ -67,8 +67,5 @@ tddium:
         - "exit 1"
   plan:
     - profile: default_0
-      sets: next_profile
-      nest:
-      - profile: "{{next_profile}}"
     - profile: "defaulted"
     - "default_2"
