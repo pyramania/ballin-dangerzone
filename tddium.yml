@@ -17,8 +17,8 @@ tddium:
     default_2:
       tests:
         - "echo '2'"
-    default_3:
-     environment:
+    defaulted:
+      environment:
         INTEGRATION:
           SPLIT:int:
             - true
@@ -70,5 +70,5 @@ tddium:
       sets: next_profile
       nest:
       - profile: "{{next_profile}}"
-    - profile: "default_3"
+    - profile: "defaulted"
     - "default_2"
