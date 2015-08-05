@@ -5,8 +5,10 @@ tddium:
   ruby_version: "ruby-1.9.2"
   profiles:
     default_0:
-      tests:
-        - "echo '0'"
+      ruby_version: 
+        SPLIT:rbv:
+        - "ruby-1.9.2"
+        - "ruby-2.1.2"
     default_1:
       tests:
         - "echo '1'"
