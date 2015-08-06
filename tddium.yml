@@ -9,7 +9,9 @@ tddium:
         - "echo '0'"
     default_1:
       tests:
-        - "echo '1'"
+        SPLIT:ha:
+          - "echo '01'"
+          - "echo '10'"
     default_2:
       tests:
         - "echo '2'"
