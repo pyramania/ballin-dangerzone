@@ -8,10 +8,10 @@ tddium:
       tests:
         - "echo '0'"
     default_1:
-      tests:
+      ruby_version:
         SPLIT:ha:
-          - "echo '01'"
-          - "echo '10'"
+          - "2.1.2"
+          - "2.1.1"
     default_2:
       tests:
         - "echo '2'"
