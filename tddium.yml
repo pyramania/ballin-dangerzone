@@ -5,10 +5,6 @@ tests:
     mode: parallel
     command: 'echo $HOME'
     output: exit-status
-    config: tests/Functional/functional.xml
-    files:
-      - tests/Functional/Tests/**/*Test.php
-      - tests/Functional/Tests/**Test.php
 test_pattern:
   - none
 timeout: 12000
