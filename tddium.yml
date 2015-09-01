@@ -10,4 +10,3 @@ profiles:
       config: tests/Functional/functional.xml
       files:
         - tests/Functional/Tests/**/*UITest.php
-    worker_limit: 4
