@@ -2,6 +2,7 @@ php:
   php_version: "5.6"
 profiles:
   default:
+    php_version: "5.5"
     tests:
     - type: phpunit
       mode: parallel
