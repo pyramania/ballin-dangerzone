@@ -1,5 +1,13 @@
 php:
   php_version: "5.6"
+tests:
+- type: phpunit
+  mode: parallel
+  command: ./config/solano/solano-phpunit-wrapper.sh
+  output: exit-status
+  config: tests/Functional/functional.xml
+  files:
+    - tests/Functional/Tests/**/*UITest.php
 profiles:
   default:
     php_version: "5.5"
