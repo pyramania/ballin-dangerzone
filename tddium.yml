@@ -13,14 +13,7 @@ notify:
   recipients:
   - committers
 tests:
-  - type: phpunit
-    mode: parallel
-    command: ./config/solano/solano-phpunit-wrapper.sh
-    output: exit-status
-    config: tests/Functional/functional.xml
-    files:
-      - tests/Functional/Tests/**/*Test.php
-      - tests/Functional/Tests/**Test.php
+  - 'echo $HOME'
 test_pattern:
   - none
 timeout: 12000
@@ -72,13 +65,7 @@ profiles:
     worker_limit: 8
   integration_full_UI_test:
     tests:
-      - type: phpunit
-        mode: parallel
-        command: ./config/solano/solano-phpunit-wrapper.sh
-        output: exit-status
-        config: tests/Functional/functional.xml
-        files:
-          - tests/Functional/Tests/**/*UITest.php
+      - 'echo $HOME'
     environment:
       <<: *integration-env
       TEST_SUITE: "UITest"
