@@ -3,7 +3,7 @@ php:
 tests:
   - type: phpunit
     mode: parallel
-    command: ./config/solano/solano-phpunit-wrapper.sh
+    command: 'echo $HOME'
     output: exit-status
     config: tests/Functional/functional.xml
     files:
