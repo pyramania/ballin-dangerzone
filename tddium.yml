@@ -19,9 +19,8 @@ tests:
     output: exit-status
     config: tests/Functional/functional.xml
     files:
-      - tests/Functional/Tests/**/*UITest.php
-      - tests/Functional/Tests/**/*HTTPTest.php
-      - tests/Functional/Tests/**/*APITest.php
+      - tests/Functional/Tests/**/*Test.php
+      - tests/Functional/Tests/**Test.php
 test_pattern:
   - none
 timeout: 12000
@@ -72,6 +71,14 @@ profiles:
       EXCLUDE_GROUP: "Basic_Test,Extended_Test"
     worker_limit: 8
   integration_full_UI_test:
+    tests:
+      - type: phpunit
+        mode: parallel
+        command: ./config/solano/solano-phpunit-wrapper.sh
+        output: exit-status
+        config: tests/Functional/functional.xml
+        files:
+          - tests/Functional/Tests/**/*UITest.php
     environment:
       <<: *integration-env
       TEST_SUITE: "UITest"
