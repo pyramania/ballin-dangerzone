@@ -7,4 +7,5 @@ tests:
     output: exit-status
     config: tests/Functional/functional.xml
     files:
-      - tests/Functional/Tests/**/*UITest.php
+      - tests/Functional/Tests/**/*Test.php
+      - tests/Functional/Tests/**Test.php
