@@ -1,115 +1,14 @@
 php:
   php_version: "5.6"
-hooks:
-  pre_setup: ./config/solano/pre_setup.sh
-  worker_setup: echo "Per-worker setup; nothing to do in simplest case"
-  post_setup: echo "Post setup, nothing to do here"
-  post_build: echo "Deploy to application server here"
-  post_worker: ./config/solano/copyResultFiles_solano.sh
-notify:
-- channel: email
-  trigger-on: done
-  message: "[Solano CI] Build %build-id% %status% from %repo%/%branch% with profile %profile-name% Success:%passed-count% Failures:%failed-count% "
-  recipients:
-  - committers
 tests:
-  - 'echo $HOME'
+  - type: phpunit
+    mode: parallel
+    command: ./config/solano/solano-phpunit-wrapper.sh
+    output: exit-status
+    config: tests/Functional/functional.xml
+    files:
+      - tests/Functional/Tests/**/*Test.php
+      - tests/Functional/Tests/**Test.php
 test_pattern:
   - none
 timeout: 12000
-collect: # See http://docs.solanolabs.com/Setup/interacting-with-build-environment/
-  repo:
-    - seleniumOutput.txt
-cache: # See http://docs.solanolabs.com/Setup/caching-dependencies/
-  key_paths:
-    - Gemfile                                 # bundler
-    - Gemfile.lock                            # bundler
-    - composer.json                           # composer
-    - composer.lock                           # composer
-    - config/solano/fetch-selenium-server.sh  # Invalidate cache if selenium version/path changes
-    - config/solano/test-env-setup.sh         # Also includes selenium version/path
-  save_paths:
-    - HOME/bundle                             # bundler
-    - HOME/.gem                               # bundler
-    - vendor                                  # composer
-    - selenium-server-standalone-2.45.0.jar   # selenium
-timeout_hook: 600  # The pre_setup hook may have to composer install and download selenium download (if cache isn't restored), and create a store
-integration-env: &integration-env
-  WHMCS_URL: "https://account.integration.zone"
-  BASE_URL: "my-integration.zone"
-  PID: 134
-staging-env: &staging-env
-  WHMCS_URL: "https://account.staging.zone"
-  BASE_URL: "my-staging.zone"
-  PID: 143
-profiles:
-  integration_basic:
-    environment:
-      <<: *integration-env
-      GROUP: "Basic_Test"
-  staging_basic:
-    environment:
-      <<: *staging-env
-      GROUP: "Basic_Test"
-  integration_full_HTTP_test:
-    environment:
-      <<: *integration-env
-      TEST_SUITE: "HTTPTest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  staging_full_HTTP_test:
-    environment:
-      <<: *staging-env
-      TEST_SUITE: "HTTPTest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  integration_full_UI_test:
-    tests:
-      - 'echo $HOME'
-    environment:
-      <<: *integration-env
-      TEST_SUITE: "UITest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  staging_full_UI_test:
-    environment:
-      <<: *staging-env
-      TEST_SUITE: "UITest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  integration_full_API_test:
-    environment:
-      <<: *integration-env
-      TEST_SUITE: "APITest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  staging_full_API_test:
-    environment:
-      <<: *staging-env
-      TEST_SUITE: "APITest"
-      EXCLUDE_GROUP: "Basic_Test,Extended_Test"
-    worker_limit: 8
-  integration_extended_API_test:
-    environment:
-      <<: *integration-env
-      TEST_SUITE: "APITest"
-      GROUP: "Extended_Test"
-    worker_limit: 8
-  staging_extended_API_test:
-    environment:
-      <<: *staging-env
-      TEST_SUITE: "APITest"
-      GROUP: "Extended_Test"
-    worker_limit: 8
-  integration_extended_UI_test:
-    environment:
-      <<: *integration-env
-      TEST_SUITE: "UITest"
-      GROUP: "Extended_Test"
-    worker_limit: 8
-  staging_extended_UI_test:
-    environment:
-      <<: *staging-env
-      TEST_SUITE: "UITest"
-      GROUP: "Extended_Test"
-    worker_limit: 8
