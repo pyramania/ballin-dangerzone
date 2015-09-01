@@ -9,3 +9,5 @@ tests:
     files:
       - tests/Functional/Tests/**/*Test.php
       - tests/Functional/Tests/**Test.php
+test_pattern:
+  - none
