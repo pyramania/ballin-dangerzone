@@ -8,3 +8,13 @@ tests:
     mode: parallel
     files:
       - tests/Functional/Tests/**/*UITest.php
+profiles:
+  default:
+    tests:
+      - type: phpunit
+        command: ./config/solano/solano-phpunit-wrapper.sh
+        output: exit-status
+        config: tests/Functional/functional.xml
+        mode: parallel
+        files:
+          - tests/Functional/Tests/**/*UITest.php
