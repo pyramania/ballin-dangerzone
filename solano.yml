@@ -6,7 +6,7 @@ tests:
 profiles:
   default:
     tests:
-      - type: junit
-        command: mvn test
+      - command: mvn test
+        type: junit
         report_files:
         - "target/surefire-reports/*.xml"
