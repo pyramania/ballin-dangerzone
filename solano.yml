@@ -3,7 +3,7 @@ php:
 tests:
   - 'echo $HOME'
 profiles:
-  integration_full_UI_test:
+  default:
     tests:
       - type: phpunit
         mode: parallel
