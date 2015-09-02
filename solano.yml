@@ -6,7 +6,6 @@ profiles:
   default:
     tests:
       - type: phpunit
-        mode: parallel
         command: ./config/solano/solano-phpunit-wrapper.sh
         output: exit-status
         config: tests/Functional/functional.xml
