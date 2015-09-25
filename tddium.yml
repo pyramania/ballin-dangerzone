@@ -8,7 +8,6 @@ tddium:
   - "node -v"
   - "php -v" 
   - "python -V"
-  - "scala -version"
   - "lein version"
   golang:
      golang_version: 1.3
