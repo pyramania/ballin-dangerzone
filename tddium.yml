@@ -66,5 +66,7 @@ tddium:
         - "exit 0"
         - "exit 1"
   plan:
-    - default_2
+    - defaulted
+    - default_16
+    - defaulted
     - defaulted
