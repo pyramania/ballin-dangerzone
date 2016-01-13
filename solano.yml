@@ -4,12 +4,18 @@
   - "cat hello"
   :profiles:
     :classic:
+      :profile_config:
+        advance_on: "always"
       :system:
         session_manager: "classic"
     :alternate:
+      :profile_config:
+        advance_on: "always"
       :system:
         session_manager: "alternate"
     :invalid:
+      :profile_config:
+        advance_on: "always"
       :system:
         session_manager: "02348dfsde33"
   :plan:
