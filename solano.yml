@@ -2,3 +2,17 @@
   :tests:
   - "echo 'Hello World, Dude.'"
   - "cat hello"
+  :profiles:
+    :classic:
+      :system:
+        manager: "classic"
+    :alternate:
+      :system:
+        manager: "alternate"
+    :invalid:
+      :system:
+        manager: "02348dfsde33"
+  :plan:
+    - "classic"
+    - "alternate"
+    - "invalid"
