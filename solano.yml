@@ -5,13 +5,13 @@
   :profiles:
     :classic:
       :system:
-        manager: "classic"
+        session_manager: "classic"
     :alternate:
       :system:
-        manager: "alternate"
+        session_manager: "alternate"
     :invalid:
       :system:
-        manager: "02348dfsde33"
+        session_manager: "02348dfsde33"
   :plan:
     - "classic"
     - "alternate"
