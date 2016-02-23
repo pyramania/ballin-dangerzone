@@ -22,4 +22,5 @@
     - "classic"
     - "alternate"
     - "invalid"
-  :ruby_version: donald_trump
+  :ruby:
+    :version: 9.2.1
