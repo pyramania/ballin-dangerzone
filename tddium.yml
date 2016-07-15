@@ -1,69 +1,37 @@
 tddium:
-  tests:
-  - "ruby -v"
-  golang_version: "1.2.1"
-  ruby_version: "ruby-1.9.2"
+  hooks:
+    pre_setup: "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+    worker_setup: "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+    post_setup: "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+    post_worker: "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+    post_build: "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
   profiles:
     default_0:
       tests:
-        - "echo '0'"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
     default_1:
-      ruby_version:
-        SPLIT:ha:
-          - "2.1.2"
-          - "2.1.1"
+      tests:
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
     default_2:
       tests:
-        - "echo '2'"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
     default_3:
       tests:
-        - "echo '3'"
-    default_4:
-      tests:
-        - "echo '4'"
-    default_5:
-      tests:
-        - "echo '5'"
-    default_6:
-      tests:
-        - "echo '6'"
-    default_7:
-      tests:
-        - "echo '7'"
-    default_8:
-      tests:
-        - "echo '8'"
-    default_9:
-      tests:
-        - "echo '9'"
-    default_10:
-      tests:
-        - "echo '10'"
-    default_11:
-      tests:
-        - "echo '11'"
-    default_12:
-      tests:
-        - "echo '12'"
-    default_13:
-      tests:
-        - "echo '13'"
-    default_14:
-      tests:
-        - "echo '14'"
-    default_15:
-      tests:
-        - "echo '15'"
-    default_16:
-      tests:
-        - "echo '16'"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
+        - "a=0; while [ $a -lt 60 ]; do echo $a; sleep 1; a=`expr $a + 1`; done"
   plan:
     default_0:
       default_1:
-        default_7:
-          default_8:
-            - "default_10"
-            - "default_11"
-            - default_12:
-                - "default_13"
-                - "default_14"
+        - default_2
+        - default_3
