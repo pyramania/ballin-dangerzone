@@ -13,7 +13,7 @@
         advance_on: "always"
       :system:
         session_manager: "alternate"
-    :invalid:
+    :valid:
       :profile_config:
         advance_on: "always"
       :system:
@@ -21,6 +21,6 @@
   :plan:
     - "classic"
     - "alternate"
-    - "invalid"
+    - "valid"
   :ruby:
     :version: 9.2.1
