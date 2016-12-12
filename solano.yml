@@ -1,0 +1,14 @@
+# Automatically run PHPUnit tests in parallel using solano-phpunit test runner
+tests:
+  - echo 0
+  - echo 1
+
+# http://docs.solanolabs.com/Setup/setup-hooks/
+hooks:
+  hooks:
+    pre_setup: echo "$AWS_ASSUME_ROLE_ACCESS_KEY_ID - $AWS_ASSUME_ROLE_SECRET_ACCESS_KEY - $AWS_ASSUME_ROLE_SESSION_TOKEN" && sleep 12
+    worker_setup: echo "$AWS_ASSUME_ROLE_ACCESS_KEY_ID - $AWS_ASSUME_ROLE_SECRET_ACCESS_KEY - $AWS_ASSUME_ROLE_SESSION_TOKEN" && sleep 12
+    post_setup: echo "$AWS_ASSUME_ROLE_ACCESS_KEY_ID - $AWS_ASSUME_ROLE_SECRET_ACCESS_KEY - $AWS_ASSUME_ROLE_SESSION_TOKEN" && sleep 12
+    post_worker: echo "$AWS_ASSUME_ROLE_ACCESS_KEY_ID - $AWS_ASSUME_ROLE_SECRET_ACCESS_KEY - $AWS_ASSUME_ROLE_SESSION_TOKEN" && sleep 12
+    post_build: echo "$AWS_ASSUME_ROLE_ACCESS_KEY_ID - $AWS_ASSUME_ROLE_SECRET_ACCESS_KEY - $AWS_ASSUME_ROLE_SESSION_TOKEN" && sleep 12
+
