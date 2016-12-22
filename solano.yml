@@ -1,5 +1,5 @@
 # Automatically run PHPUnit tests in parallel using solano-phpunit test runner
 tests:
-  - echo 0
-  - command: "echo 1"
+  - ./sleep.sh
+  - command: ./sleep.sh
     name: "Test for echo"
