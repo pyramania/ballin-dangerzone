@@ -1,5 +1,24 @@
-# Automatically run PHPUnit tests in parallel using solano-phpunit test runner
-tests:
-  - ./sleep.sh
-  - command: ./sleep.sh
-    name: "Test for echo"
+--- 
+tddium: 
+  pipeline:
+    - "default_1"
+    - "default_2"
+  profiles:
+    default_1:
+      tests:
+        - "sleep 10"
+    default_2:
+      tests:
+        - "sleep 99999"
+    default_3:
+      tests:
+        - "sleep 3"
+    default_4:
+      tests:
+        - "sleep 4"
+    default_5:
+      tests:
+        - "sleep 5"
+    default_6:
+      tests:
+        - "sleep 6"
