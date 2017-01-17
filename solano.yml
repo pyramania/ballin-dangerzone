@@ -2,7 +2,7 @@
 tddium: 
   pipeline:
     - "default_1"
-    - "default_3"
+    - "default_4"
   profiles:
     default_1:
       tests:
